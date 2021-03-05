@@ -22,7 +22,7 @@ right: denoised image using trained SGN
 
 <img src="./result.jpg" width="1000"/>
 
-You can download pre-trained models (also on ILSVRC2012 validation set, different mu and sigma) via this [link](https://portland-my.sharepoint.com/:f:/g/personal/yzzhao2-c_ad_cityu_edu_hk/EnJkUyTlR1ZPghHh6_Z0GDQBcHpH60LUUtYvKihrILkeRA?e=W10vvF).
+You can download pre-trained models (also on ILSVRC2012 validation set, different mu and sigma) via this [link](https://portland-my.sharepoint.com/:f:/g/personal/yzzhao2-c_my_cityu_edu_hk/EnJkUyTlR1ZPghHh6_Z0GDQBcHpH60LUUtYvKihrILkeRA?e=jLcCYk).
 
 You may use following script to test it on your own data (noted that you need to modify dataset path):
 ```bash
