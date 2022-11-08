@@ -1,11 +1,7 @@
 import time
 import datetime
-import itertools
-import numpy as np
 import torch
 import torch.nn as nn
-from torch.autograd import Variable
-import torch.autograd as autograd
 from torch.utils.data import DataLoader
 import torch.backends.cudnn as cudnn
 
