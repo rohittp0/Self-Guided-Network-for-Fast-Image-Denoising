@@ -15,12 +15,8 @@ def unsharp_mask(image, kernel_size=(5, 5), sigma=1.0, amount=1.0, threshold=0):
     return sharpened
 
 
-img = cv2.imread('D:/Data/Python/neural-enhance/data/1-2383/y/14.png')
+def denoise(img):
+    show_img = cv2.fastNlMeansDenoisingColored(img, templateWindowSize=5, searchWindowSize=21, h=8, hColor=10)
+    show_img = unsharp_mask(show_img, kernel_size=(5, 5), sigma=1.5, amount=1.2, threshold=0)
 
-show_img = cv2.fastNlMeansDenoisingColored(img, templateWindowSize=5, searchWindowSize=21, h=8, hColor=10)
-cv2.imwrite("4i.png", show_img)
-
-show_img = unsharp_mask(show_img, kernel_size=(7, 7), sigma=1.5, amount=1.2, threshold=0)
-
-cv2.imwrite("4.png", show_img)
-cv2.imwrite("4o.png", cv2.imread('D:/Data/Python/neural-enhance/data/1-2383/x/14.png'))
+    return show_img
